@@ -1,8 +1,17 @@
 The main functionality of this project is to track volatility of a cryptocurrencys pair rate (max and min ratio values)
 This project was implemented using Vert.x framework and Apache Maven as a build tool.
 
-== Prerequisites
+## Prerequisites
 
 * Apache Maven
 * JDK 8+
 
+## Improvements\TODO
+
+* Unit/integration testing
+* Proper error handling
+* Validation (incoming requests/responses)
+* Add posibility to stop tracking a curreny pair (undeploy verticle)
+* Use RxJava
+* User Interface
+* Authentification
