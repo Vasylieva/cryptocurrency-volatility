@@ -6,6 +6,11 @@ This project was implemented using Vert.x framework and Apache Maven as a build 
 * Apache Maven
 * JDK 8+
 
+## How to use/start
+
+* To package and generate jar: ```mvn clean package```
+* To start application: ```java -jar target/cryptocurrency-volatility-1.0-SNAPSHOT-fat.jar```
+
 ## Improvements\TODO
 
 * Unit/integration testing
