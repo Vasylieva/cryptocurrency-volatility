@@ -11,6 +11,30 @@ This project was implemented using Vert.x framework and Apache Maven as a build 
 * To package and generate jar: ```mvn clean package```
 * To start application: ```java -jar target/cryptocurrency-volatility-1.0-SNAPSHOT-fat.jar```
 
+## Rest API:
+To add new currency pair to track use POST REST endpoint ```/cryptos/```:
+
+**Example:**
+```
+Request:
+POST /cryptos/
+{
+ "ccy1": "ETH",
+ "ccy2": "DASH"
+}
+```
+To get min/max rates use GET REST endpoint```/cryptos/:ccy1/:ccy2```:
+
+**Example:**
+```
+GET /cryptos/ETH/DASH
+Response:
+{
+ "min": 1.345123,
+ "max": 1.45223
+}
+```
+
 ## Improvements\TODO
 
 * Unit/integration testing
